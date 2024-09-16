@@ -1,0 +1,169 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #5b0547;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+    background-color: #580943;
+    color: #761752;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #483D8B;
+    border-radius: 5px;
+}
+
+/* Estilo do conteúdo principal (main) */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section h2 {
+    font-size: 2.2em;
+    color: #6A5ACD;
+    margin-bottom: 20px;
+}
+
+main section p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Imagens */
+main img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Formulários */
+form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #6A5ACD;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
+}
+
+form input[type="submit"] {
+    background-color: #6A5ACD;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #483D8B;
+}
+
+/* Rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
