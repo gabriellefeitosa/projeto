@@ -1,0 +1,393 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf0f8; /* Fundo suave rosado */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+    background-color: #ff66b2; /* Tom de rosa vibrante */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #e60099; /* Cor de hover mais escura */
+    border-radius: 5px;
+}
+
+/* Estilo da seção hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Altura da viewport para uma seção de capa impactante */
+    text-align: center;
+    background: linear-gradient(to bottom, #ff66b2, #fdf0f8); /* Gradiente suave */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+/* Contêiner dos botões */
+.button-container {
+    display: flex;
+    flex-direction: row; /* Alinha os botões horizontalmente */
+    gap: 15px; /* Espaço entre os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff66b2; /* Cor de fundo rosa */
+    color: #fff;
+    padding: 15px 25px; /* Tamanho dos botões */
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px; /* Botões redondos */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #e60099; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(230, 0, 153, 0.3); /* Efeito de sombra no hover */
+}
+
+.button:active {
+    background-color: #cc0080; /* Cor mais escura quando clicado */
+    box-shadow: 0 2px 5px rgba(204, 0, 128, 0.5); /* Efeito de sombra mais leve ao clicar */
+}
+
+/* Estilo da página de contato */
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffe6f0; /* Fundo suave rosado */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    border-color: #e60099;
+    outline: none;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact .button {
+    display: inline-block;
+    background-color: #ff66b2; /* Cor de fundo rosa */
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px; /* Botões redondos */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact .button:hover {
+    background-color: #e60099; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(230, 0, 153, 0.3);
+}
+
+.contact .button:active {
+    background-color: #cc0080;
+    box-shadow: 0 2px 5px rgba(204, 0, 128, 0.5);
+}
+
+/* Rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff66b2; /* Cor rosa */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #e60099; /* Cor rosa mais escura ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .button-container {
+        flex-direction: column; /* Alinha os botões verticalmente em dispositivos menores */
+        gap: 10px;
+    }
+}
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf0f8; /* Fundo suave rosado */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ff66b2; /* Tom de rosa vibrante */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #e60099;
+    border-radius: 5px;
+}
+
+/* Estilo da seção da galeria */
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Contêiner da galeria */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Itens da galeria */
+.gallery-item {
+    width: calc(25% - 20px); /* Cada item ocupará 25% da largura com espaço entre eles */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #aa187e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff66b2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #e60099;
+    text-decoration: underline;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Itens da galeria ocupam 50% em telas menores */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
