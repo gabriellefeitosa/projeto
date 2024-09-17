@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - É Assim que Acaba</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33% - 20px);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>É Assim que Acaba</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre o Livro</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="temas.html">Temas</a></li>
+                <li><a href="adaptaçoes.html">Adaptações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Galeria de Imagens</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="capa.jpg.jpeg" alt="Capa do Livro">
+                </div>
+                <div class="gallery-item">
+                    <img src="pagina1.jpg.jpeg" alt="Página 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="pagina2.jpg.jpeg" alt="Página 2">
+                </div>
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Site sobre "É Assim Que Acaba"</p>
+    </footer>
+</body>
+</html>
